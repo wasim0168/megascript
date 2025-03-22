@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Programs - Megascript</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .courses-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .courses-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .courses-section .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+    .courses-section .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .courses-section .card i {
+      font-size: 2.5rem;
+      color: #ffa300;
+      margin-bottom: 20px;
+    }
+    .courses-section .card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .courses-section .card p {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 20px;
+    }
+    .courses-section .btn {
+      background: #ffa300;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .courses-section .btn:hover {
+      background: #ff6347;
+      color: #fff;
+    }
+    .cta-section {
+      background: linear-gradient(135deg, #ffa300, #ff6347);
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .cta-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.8;
+    }
+    .cta-section .btn {
+      background: #fff;
+      color: #ff6347;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 30px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .cta-section .btn:hover {
+      background: #ff6347;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Training Programs</h1>
+      <p>
+        At Megascript, we offer comprehensive training programs in Software Development, App Development, Web Development, and more. Our courses are designed to equip you with the skills needed to excel in the tech industry.
+      </p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses-section">
+    <div class="container">
+      <h2>Our Courses</h2>
+      <div class="row">
+        <!-- Course 1: Software Development -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Software Development</h3>
+            <p>
+              Learn the fundamentals of software development, including programming languages, algorithms, and software design principles.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+        </div>
+
+        <!-- Course 2: App Development -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>App Development</h3>
+            <p>
+              Master the art of building mobile applications for iOS and Android using the latest tools and frameworks.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+        </div>
+
+        <!-- Course 3: Web Development -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Become a full-stack web developer by learning HTML, CSS, JavaScript, and modern frameworks like React and Node.js.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+        </div>
+
+        <!-- Course 4: UI/UX Design -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              Learn to design intuitive and visually appealing user interfaces and experiences for web and mobile applications.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+        </div>
+
+        <!-- Course 5: Data Science -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Science</h3>
+            <p>
+              Dive into data science with courses on Python, machine learning, data visualization, and big data analytics.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+        </div>
+
+        <!-- Course 6: Cloud Computing -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Computing</h3>
+            <p>
+              Explore cloud platforms like AWS, Azure, and Google Cloud to build scalable and secure cloud-based solutions.
+            </p>
+            <a href="#" class="btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Start Your Journey?</h2>
+      <p>
+        Join our training programs today and take the first step towards a successful career in tech. Enroll now to unlock your potential!
+      </p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

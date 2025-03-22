@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+     /* Keyframes for Text Animation */
+     @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Apply Animation to Overlay Text */
+    .overlay-text {
+      animation: slideInFromLeft 1.5s ease-out forwards;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-shadow: 7px 4px 6px rgba(187, 206, 16, 0.69);
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    /* Apply Animation to Overlay Image */
+    .overlay-img {
+      animation: fadeIn 2s ease-out forwards;
+      max-width: 200px; /* Adjust size as needed */
+    }
+
+    /* Button Animation */
+    .btn-light {
+      animation: fadeIn 2.5s ease-out forwards;
+    }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/Gold Luxury Initial Logo.png" height="50px" width="200px" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Web.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="App.html">App Development</a></li>
+              <!-- <li><a class="dropdown-item" href="#">SEO</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+         
+        </ul>
+        <span class="navbar-text">
+          <ul class="ms-3">
+            <!-- <a class="nav-link" href="#">Training</a> -->
+             <button id="mxc" class="btn btn-success">Training</button>
+        </ul>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+      <!-- hero section -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+              <!-- Background Image -->
+              <img src="./images/world-map-cyber-security-ivcowv89j1g1ff4m.jpg" height="600px" class="d-block w-100" alt="Background Image">
+              
+              <!-- Overlay Content -->
+              <div class="position-absolute top-0 start-50 translate-middle-x text-center mt-5 h-50 w-50">
+                <!-- Overlay Image -->
+                <img src="./images/Gold_Luxury_Initial_Logo-removebg-preview.png" class="overlay-img" alt="Overlay Image">
+                
+                <!-- Overlay Text -->
+                <p class="overlay-text">" Megascript - Transforming Ideas into Digital Reality "</p>
+                
+                <!-- Button -->
+                <div class="mt-5">
+                  <button class="btn btn-light fw-bold mt-5" style="box-shadow: 7px 4px 6px rgba(187, 206, 16, 0.69);">Get A Free Consultation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- our services -->
+         <h1 class="text-center mt-3" >- Our Services -</h1>
+        <div class="container py-2">
+          <div class="row g-4">
+              <!-- Service Card 1 -->
+              <div class="col-md-4">
+                  <div class="service-card hover-lift">
+                      <div class="service-card-inner">
+                          <div class="service-card-front">
+                              <div class="icon-wrapper">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="yellow"
+                                      class="bi bi-code-slash" viewBox="0 0 16 16">
+                                      <path
+                                          d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                                  </svg>
+                              </div>
+                              <h3 class="h4 mb-2">Web Development</h3>
+                              <p class="text-center mb-0">Modern solutions for your digital presence</p>
+                          </div>
+                          <div class="service-card-back">
+                              <h4 class="mb-3">Our Expertise</h4>
+                              <ul class="feature-list">
+                                  <li>Custom Website Development</li>
+                                  <li>Responsive Design</li>
+                                  <li>Performance Optimization</li>
+                                  <li>SEO Integration</li>
+                              </ul>
+                              <button class="btn btn-primary mt-4">Learn More</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Service Card 2 -->
+              <div class="col-md-4">
+                  <div class="service-card hover-lift">
+                      <div class="service-card-inner">
+                          <div class="service-card-front">
+                              <div class="icon-wrapper">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="yellow"
+                                      class="bi bi-palette" viewBox="0 0 16 16">
+                                      <path
+                                          d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                      <path
+                                          d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
+                                  </svg>
+                              </div>
+                              <h3 class="h4 mb-2">UI/UX Design</h3>
+                              <p class="text-center mb-0">Crafting beautiful user experiences</p>
+                          </div>
+                          <div class="service-card-back">
+                              <h4 class="mb-3">Design Services</h4>
+                              <ul class="feature-list">
+                                  <li>User Interface Design</li>
+                                  <li>User Experience Research</li>
+                                  <li>Prototyping</li>
+                                  <li>Design Systems</li>
+                              </ul>
+                              <button class="btn btn-primary mt-4">Learn More</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Service Card 3 -->
+              <div class="col-md-4">
+                <div class="service-card hover-lift">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="yellow" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm1 12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v10z"/>
+                                    <path d="M8 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="h4 mb-2">App Development</h3>
+                            <p class="text-center mb-0">Building user-friendly and high-performance apps</p>
+                        </div>
+                        <div class="service-card-back">
+                            <h4 class="mb-3">Development Solutions</h4>
+                            <ul class="feature-list">
+                                <li>iOS & Android Development</li>
+                                <li>Cross-Platform Apps</li>
+                                <li>UI/UX Design</li>
+                                <li>App Maintenance & Support</li>
+                            </ul>
+                            <button class="btn btn-primary mt-4">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+              </div>
+              
+               
+          </div>
+      </div>
+    <!-- Why Choose Us Section -->
+<hr>
+<!-- Why Choose Us Section -->
+<section class="why-choose-us mt-3">
+  <div class="container">
+      <h2 style="color: rgb(255, 204, 0);" >Why Choose Us?</h2>
+      <div class="row">
+          <!-- Feature 1 -->
+          <div class="col-lg-4 col-md-6">
+              <div class="feature-box p-4 shadow-lg">
+                  <i class="fas fa-laptop-code"></i>
+                  <h4>Expert Developers</h4>
+                  <p>Our experienced team builds high-quality, scalable solutions tailored to your needs.</p>
+              </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="col-lg-4 col-md-6">
+              <div class="feature-box p-4 shadow-lg">
+                  <i class="fas fa-shield-alt"></i>
+                  <h4>Fast & Secure</h4>
+                  <p>We prioritize performance and security to ensure the best experience for users.</p>
+              </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="col-lg-4 col-md-12">
+              <div class="feature-box p-4 shadow-lg">
+                  <i class="fas fa-headset"></i>
+                  <h4>24/7 Support</h4>
+                  <p>Our support team is always available to help with any issues or inquiries.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<hr>
+<!-- Our Clients Section -->
+<section>
+  <div class="container">
+      <h1 class="text-center mt-3">- Our Clients -</h1>
+      <div class="row align-items-center justify-content-center">
+          
+          <!-- New Image on the Left Side -->
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+              <img src="./images/stock-photo-business-shaking-hand-with-a-client-in-office.jpeg" 
+                   alt="Client Logo" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+          </div>
+          
+          <!-- Client Testimonial 1 -->
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+              <div class="text-center p-4 shadow rounded">
+                  <img src="./images/JK_Auto-removebg-preview.png" alt="Client 1" class="img-fluid" style="max-width: 200px;">
+                  <h5 class="mt-3">JK Automobile</h5>
+                  <p>“Megascript transformed our website and boosted our online presence!”</p>  
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- Client Testimonial 2 -->
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+              <div class="text-center p-4 shadow rounded">
+                  <img src="./images/HEALTH_1-removebg-preview.png" alt="Healthcare" class="img-fluid" style="max-width: 200px;">
+                  <h5 class="mt-3">Healthcare</h5>
+                  <p>“Megascript transformed our website and boosted our online presence!”</p>  
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star fa-sm text-warning"></i>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+<!-- Footer -->
+       <!-- Footer -->
+       <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 mb-4">
+              <h4>About Megascript</h4>
+              <p>
+                Megascript is a leading web development and design company dedicated to creating innovative and user-friendly digital solutions. We empower businesses to thrive in the digital world with cutting-edge technology and creative expertise.
+              </p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div class="col-md-2 mb-4">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="col-md-3 mb-4">
+              <h4>Contact Us</h4>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Old Kampthee Road , Kalamna , Nagpur <br>
+                <i class="fas fa-phone"></i> +91 9529468439<br>
+                <i class="fas fa-envelope"></i> megascript003@gmail.com
+              </p>
+            </div>
+      
+            <!-- Social Media -->
+            <div class="col-md-3 mb-4">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="row">
+            <div class="col-12">
+              <div class="copyright">
+                &copy; 2023 Megascript. All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+<!-- Footer --> 
+
+<script>
+  document.getElementById('mxc').addEventListener('click', function(){
+   window.location.href = 'training.html';
+  });
+</script>
+</body>
+</html>
