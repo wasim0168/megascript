@@ -89,6 +89,35 @@
             font-weight: 600;
             margin-top: 10px;
         }
+        @media (max-width: 768px) {
+    .overlay-text {
+        font-size: 6vw !important;
+    }
+    .overlay-text span {
+        font-size: 7vw !important;
+    }
+    h3 {
+        font-size: 3.5vw !important;
+    }
+    .btn {
+        font-size: 3vw !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .overlay-text {
+        font-size: 8vw !important;
+    }
+    .overlay-text span {
+        font-size: 9vw !important;
+    }
+    h3 {
+        font-size: 4.5vw !important;
+    }
+    .btn {
+        font-size: 4vw !important;
+    }
+}
     </style>
 </head>
 <body>
@@ -140,15 +169,19 @@
             <img src="./images/world-map-cyber-security-ivcowv89j1g1ff4m.jpg" height="300px" class="d-block w-100" alt="Background Image">
             
             <!-- Overlay Image -->
-            <div class="position-absolute top-0 start-50 translate-middle-x text-center mt-5 h-50 w-50">
-                <!-- <img src="./images/Gold_Luxury_Initial_Logo-removebg-preview.png" class="overlay-img" alt="Overlay Image"> -->
-                <p class="overlay-text"  style="font-size: 50px;"><span style="color: rgb(218, 184, 15);font-size: 55px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >W</span>eb <span style="color: rgb(218, 184, 15);font-size: 55px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >D</span>evelopment <span style="color: rgb(218, 184, 15);font-size: 55px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >S</span>ervices</p>
-            <div class="mt-2">
-              <h3 class="fw-bold" style="color: rgb(209, 198, 50);" >We build fast, secure, and scalable web solutions.
-              </h3>
-              <button class="btn btn-light mt-2" >Get Started</button>
+            <div class="position-absolute top-0 start-50 translate-middle-x text-center mt-5 w-100">
+                <p class="overlay-text" style="font-size: 4vw;">
+                    <span style="color: rgb(218, 184, 15); font-size: 5vw; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">W</span>eb 
+                    <span style="color: rgb(218, 184, 15); font-size: 5vw; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">D</span>evelopment 
+                    <span style="color: rgb(218, 184, 15); font-size: 5vw; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">S</span>ervices
+                </p>
+                <div class="mt-2">
+                    <h3 class="fw-bold" style="color: rgb(209, 198, 50); font-size: 2.5vw;">
+                        We build fast, secure, and scalable web solutions.
+                    </h3>
+                    <button class="btn btn-light">Get Started</button>
+                </div>
             </div>
-              </div>
         </div>
     </div>
     <!-- para -->
