@@ -10,6 +10,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/team.css">
   <!-- Custom CSS -->
   <style>
     body {
@@ -33,90 +34,7 @@
       margin: 0 auto;
       line-height: 1.8;
     }
-    .card {
-      border: none;
-      border-radius: 20px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      background: #fff;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    }
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, rgba(255, 163, 0, 0.1), rgba(255, 99, 71, 0.1));
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .card:hover::before {
-      opacity: 1;
-    }
-    .img-bx {
-      overflow: hidden;
-      border-radius: 20px 20px 0 0;
-      position: relative;
-    }
-    .img-bx img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-    .card:hover .img-bx img {
-      transform: scale(1.1);
-    }
-    .content {
-      padding: 20px;
-      text-align: center;
-      position: relative;
-    }
-    .content h2 {
-      font-size: 1.75rem;
-      margin-bottom: 10px;
-      color: #333;
-      font-weight: 600;
-    }
-    .content span {
-      font-size: 1rem;
-      color: #777;
-      display: block;
-      margin-bottom: 15px;
-    }
-    .content .badge {
-      background: linear-gradient(135deg, #ffa300, #ff6347);
-      color: #fff;
-      padding: 5px 15px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
-    .sci {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0 0;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-    .sci li a {
-      color: #555;
-      font-size: 1.2rem;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-    .sci li a:hover {
-      color: #ffa300;
-      transform: translateY(-5px);
-    }
+    
   </style>
 </head>
 <body>
@@ -174,85 +92,93 @@
           At Megascript, we are a passionate and dedicated team of professionals specializing in web development, app development , design, and innovation. Our mission is to deliver cutting-edge solutions that empower businesses and individuals to thrive in the digital world. With a focus on creativity, collaboration, and excellence, we bring ideas to life through seamless user experiences and robust technical expertise. Together, we strive to push boundaries, solve challenges, and create impactful solutions that make a difference.
         </p>
       </div>
-
       <!-- Team Cards -->
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="img-bx">
-              <img src="./images/CEO megascript.jpg" alt="CEO">
+      <div class="team-section">
+        <div class="container">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="hexagon-container">
+                  <div class="hexagon">
+                    <img src="./images/CEO megascript.jpg" alt="Wasim Sheikh" onerror="this.src='https://via.placeholder.com/150/4361ee/ffffff?text=CEO'">
+                  </div>
+                </div>
+                <h5 class="member-name">Wasim R. Sheikh</h5>
+                <span class="member-position border border-warning ps-2 px-2 rounded">CEO & Founder</span>
+                <p class="member-bio mt-3">Leading our team with vision and technical expertise in backend systems and architecture.</p>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/wasim-sheikh-481a88272/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/wasim0168" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="content">
-              <h2 class="fw-bold">Wasim Sheikh</h2>
-              <span>Backend Developer</span>
-              <span class="badge">CEO & Founder</span>
-              <ul class="sci">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              </ul>
+    
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="hexagon-container">
+                  <div class="hexagon">
+                    <img src="./images/kau.jpg" alt="Kaustubh Nandankar" onerror="this.src='https://via.placeholder.com/150/3f37c9/ffffff?text=Frontend'">
+                  </div>
+                </div>
+                <h5 class="member-name">Kaustubh Nandankar</h5>
+                <span class="member-position">Frontend Developer</span>
+                <p class="member-bio">Creating beautiful, responsive interfaces with pixel-perfect precision.</p>
+                <div class="social-links">
+                  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="hexagon-container">
+                  <div class="hexagon">
+                    <img src="./images/ones.jpg" alt="Devesh Wadibhasme" onerror="this.src='https://via.placeholder.com/150/4cc9f0/ffffff?text=React'">
+                  </div>
+                </div>
+                <h5 class="member-name">Devesh Wadibhasme</h5>
+                <span class="member-position">React Specialist</span>
+                <p class="member-bio">Building dynamic, high-performance React applications with modern architectures.</p>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/devesh-wadibhasme-220b662ab" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="hexagon-container">
+                  <div class="hexagon">
+                    <img src="./images/aadi.jpg" alt="Aditya Rahangdale" onerror="this.src='https://via.placeholder.com/150/2b2d42/ffffff?text=Design'">
+                  </div>
+                </div>
+                <h5 class="member-name">Aditya Rahangdale</h5>
+                <span class="member-position">UI/UX Designer</span>
+                <p class="member-bio">Designing intuitive experiences that users love with a focus on accessibility.</p>
+                <div class="social-links">
+                  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Card 2 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="img-bx">
-              <img src="./images/rishab.jpg" alt="Frontend Developer">
-            </div>
-            <div class="content">
-              <h2 class="fw-bold">Kaustubh Nandankar</h2>
-              <span>Frontend Developer</span>
-              <ul class="sci">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="img-bx">
-              <img src="./images/devish.jpg" alt="React Developer">
-            </div>
-            <div class="content">
-              <h2 class="fw-bold">Devesh Wadibhasme</h2>
-              <span>React JS Developer</span>
-              <ul class="sci">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="img-bx">
-              <img src="./images/aadi.jpg" alt="UI/UX Designer">
-            </div>
-            <div class="content">
-              <h2 class="fw-bold">Aditya <br> Rahangdale</h2>
-              <span>UI/UX Designer</span>
-              <ul class="sci">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      </div>
+    
       </div>
     </div>
   </section>
